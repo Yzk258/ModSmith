@@ -173,7 +173,7 @@ impl ProgressPrinter {
     }
 }
 
-/// 交互式 REPL 主循环 (cargo run 不带子命令时进入)。
+/// 交互式 REPL 主循环（当前由模块保留，默认启动方式为 Web UI）。
 /// 处理 /new /save /load /stats /set /quit 与普通对话轮; 每轮 Ctrl+C 可打断,
 /// 轮末自动保存。视觉输出全部用本模块的样式函数。
 pub async fn repl(cfg: &Config) -> Result<()> {
